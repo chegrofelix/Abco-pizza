@@ -41,3 +41,15 @@ size.prototype.priceSize = function() {
 function crust(name) {
     this.crustName = name;
 }
+crust.prototype.crustPrice = function() {
+    if (this.crustName === "stuffed") {
+        return 130;
+    } else if (this.crustName === "crispy") {
+        return 70;
+    } else if (this.crustName === "gluten free") {
+        return 150;
+    } else {
+        alert("Please select a prefferable crust to continue");
+    }
+}
+
