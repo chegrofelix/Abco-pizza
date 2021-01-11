@@ -21,7 +21,7 @@ pizza.prototype.nameSize = function() {
     }else if(this.pizzaName === "Spicy Boerewors.") {
         return "Spicy Boerewors.";
     }else {
-        alert("Please select a pizza type to continue");
+        //alert("Please select a pizza type to continue");
     };
 }
 function size(name) {
@@ -35,7 +35,7 @@ size.prototype.priceSize = function() {
     } else if(this.sizeName === "small") {
         return 500;
     } else {
-        alert("Please select a pizza size");
+        //alert("Please select a pizza size");
     }
 }
 function crust(name) {
@@ -49,7 +49,7 @@ crust.prototype.crustPrice = function() {
     } else if (this.crustName === "gluten free") {
         return 150;
     } else {
-        alert("Please select a prefferable crust to continue");
+        //alert("Please select a prefferable crust to continue");
     }
 }
 function topping(name) {
@@ -73,7 +73,7 @@ topping.prototype.toppingPrice = function() {
     } else if (this.toppingName === "Green-peppers") {
         return 20;
     } else {
-        alert("Please choose topping(s) of your choice");
+        //alert("Please choose topping(s) of your choice");
     }
 }
 function quantity(name) {
@@ -82,6 +82,59 @@ function quantity(name) {
 quantity.prototype.quantityPrice = function() {
 
 }
+
+var pizzaInput = $("#type").val();
+
+pizzaSelect = new pizza(pizzaInput);
+pizzaSelect.nameSize();
+// alert(pizzaSelect.nameSize());
+
+var sizeInput = $("#size").val();
+
+var pizzaSize = new size(sizeInput);
+pizzaSize.priceSize();
+// alert(pizzaSize.priceSize());
+
+var crustInput = $("#crust").val();
+
+var crustSize = new crust(crustInput);
+crustSize.crustPrice();
+// alert(crustSize.crustPrice());
+
+
+var toppingInput = $("#toppings").val();
+
+var toppingSize = new topping(toppingInput);
+toppingSize.toppingPrice();
+// alert(toppingSize.toppingPrice());
+
+
+var quantityInput = $("quantity").val();
+
+var  quantitySize = new quantity (quantityInput);
+ quantitySize.quantityPrice();
+//  alert(quantitySize.quantityPrice());
+
+// calcTotal to calculate the total pizza summation
+
+var pizzaPrice = (parseInt(parseInt(pizzaSize.priceSize()) + parseInt(crustSize.crustPrice()) + parseInt(toppingSize.toppingPrice())));
+$("#summation").append(pizzaPrice);
+
+// S-size, C-crust, T-toppings N-name
+
+var pizzaS = (pizzaSize.priceSize());
+$("#psize").append(pizzaS);
+
+var pizzaC = (crustSize.crustPrice());
+$("#cprice").append(pizzaC);
+
+var pizzaT = (toppingSize.toppingPrice());
+$("#tprice").append(pizzaT);
+
+var pizzaN = (pizzaSelect.nameSize());
+$("#ptype").append(pizzaN);
+event.preventDefault();
+
 
 $(document).ready(function() {
     $("#delivery").click(function() {
@@ -94,4 +147,4 @@ $(document).ready(function() {
     $("#checkout").click(function() {
         event.preventDefault();
     });
-});  
+});
