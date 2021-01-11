@@ -76,4 +76,7 @@ topping.prototype.toppingPrice = function() {
         alert("Please choose topping(s) of your choice");
     }
 }
+function quantity(name) {
+    this.quantityName = name;
+}
 
