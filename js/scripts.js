@@ -79,4 +79,7 @@ topping.prototype.toppingPrice = function() {
 function quantity(name) {
     this.quantityName = name;
 }
+quantity.prototype.quantityPrice = function() {
+
+}
 
