@@ -144,10 +144,35 @@
                         &nbsp; &nbsp; &nbsp; <button type="submit" id="checkout" class="btn btn-success">Place
                             Order</button>
                         &nbsp; &nbsp; &nbsp; <button type="reset" id="" class="btn btn-danger">Clear Order</button>
-
-
+                      </div>
+                      <div class="container-fluid col-md-7 p-2 summation">
+                        <div class="container-fluid summarypreview p-2">
+                            <h5 class="text-white text-center">Total summation of your order.</h5>
+                            <table class="table table-sm p-2">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Size</th>
+                                        <th scope="col">Crust</th>
+                                        <th scope="col">Topping</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td id="ptype"></td>
+                                        <td id="psize"></td>
+                                        <td id="cprice"></td>
+                                        <td id="tprice"></td>
+                                        <td id="summation"></td>
+                                    </tr>
+                                </tbody>
+                            </table><br>
+                            <h6 class="delivery"><strong>For Deliveries</strong></h6>
+                            <button id="final" value="true" type="submit" class="btn btn-success">Checkout</button>
+                            <button id="delivery" type="submit" class="btn btn-success">Delivery</button>
+                        </div>
                     </div>
-
       
     </div>
     <script src="./js/scripts.js"></script>
