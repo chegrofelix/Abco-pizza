@@ -90,3 +90,6 @@ $(document).ready(function() {
         prompt("Enter your current location");
     });
 });
+$(document).ready(function() {
+    $("#checkout").click(function() {
+        event.preventDefault();
