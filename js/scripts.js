@@ -4,8 +4,8 @@ function pizza(name) {
 }
 
 pizza.prototype.nameSize = function() {
-    if (this.pizzaName === "Chicken Hawaiian.") {
-        return "Chicken Hawaiian.";
+    if (this.pizzaName === "Hawaiian BBQ pizza.") {
+        return "Hawaiian BBQ pizza.";
     }else if(this.pizzaName === "Cheese Burger.") {
         return "Cheese Burger.";
     }else if(this.pizzaName === "Meat Deluxe.") {
@@ -14,10 +14,10 @@ pizza.prototype.nameSize = function() {
         return "Chicken Macon BBQ.";
     }else if(this.pizzaName === "Chicken & Beef Pepperoni.") {
         return "Chicken & Beef Pepperoni.";
-    }else if(this.pizzaName === "Veg Feast.") {
-        return "Veg Feast.";
-    }else if(this.pizzaName === "Roast Veg & Feta.") {
-        return "Roast Veg & Feta.";
+    }else if(this.pizzaName === "Vegeterian pizza.") {
+        return "Vegeterian pizza.";
+    }else if(this.pizzaName === "Mozarella cheese pizza.") {
+        return "Mozarella cheese pizza.";
     }else if(this.pizzaName === "Spicy Boerewors.") {
         return "Spicy Boerewors.";
     }else {
