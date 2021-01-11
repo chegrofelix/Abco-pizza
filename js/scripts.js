@@ -23,4 +23,7 @@ pizza.prototype.nameSize = function() {
     }else {
         alert("Please select a pizza type to continue");
     };
-    
+}
+function size(name) {
+    this.sizeName = name;
+}
