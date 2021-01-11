@@ -1,7 +1,7 @@
 header {
     background-image: url("../images/Abco_pizza.jpg");
     padding: 80px;
-    color: #ff4646;
+    color: aliceblue;
     text-align: center;
 }
 @media only screen and (min-width: 600px) {
@@ -16,4 +16,10 @@ h2 {
 h1 {
     font-family: 'Yeon Sung', cursive;
     font-size: 60px;
+}
+h2:hover {
+    color: aqua;
+}
+h1:hover {
+    color: aqua;
 }
