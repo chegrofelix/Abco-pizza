@@ -38,3 +38,6 @@ size.prototype.priceSize = function() {
         alert("Please select a pizza size");
     }
 }
+function crust(name) {
+    this.crustName = name;
+}
