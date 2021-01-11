@@ -52,4 +52,7 @@ crust.prototype.crustPrice = function() {
         alert("Please select a prefferable crust to continue");
     }
 }
+function topping(name) {
+    this.toppingName = name;
+}
 
