@@ -27,3 +27,14 @@ pizza.prototype.nameSize = function() {
 function size(name) {
     this.sizeName = name;
 }
+size.prototype.priceSize = function() {
+    if (this.sizeName === "large") {
+        return 1200;
+    } else if(this.sizeName === "medium") {
+        return 850;
+    } else if(this.sizeName === "small") {
+        return 500;
+    } else {
+        alert("Please select a pizza size");
+    }
+}
