@@ -55,4 +55,25 @@ crust.prototype.crustPrice = function() {
 function topping(name) {
     this.toppingName = name;
 }
+topping.prototype.toppingPrice = function() {
+    if (this.toppingName === "Pepperoni") {
+        return 40;
+    } else if (this.toppingName === "Mushrooms") {
+        return 80;
+    } else if (this.toppingName === "Onions") {
+        return 25;
+    } else if (this.toppingName === "Sausage") {
+        return 60;
+    } else if (this.toppingName === "Bacon") {
+        return 45;
+    } else if (this.toppingName === "Extra-cheese") {
+        return 70;
+    } else if (this.toppingName === "Black-olives") {
+        return 85;
+    } else if (this.toppingName === "Green-peppers") {
+        return 20;
+    } else {
+        alert("Please choose topping(s) of your choice");
+    }
+}
 
