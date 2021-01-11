@@ -93,3 +93,5 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#checkout").click(function() {
         event.preventDefault();
+    });
+});  
