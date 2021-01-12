@@ -21,7 +21,7 @@ pizza.prototype.nameSize = function() {
     }else if(this.pizzaName === "Spicy Boerewors.") {
         return "Spicy Boerewors.";
     }else {
-        //alert("Please select a pizza type to continue");
+       // alert("Please select a pizza type to continue");
     };
 }
 function size(name) {
@@ -87,33 +87,33 @@ var pizzaInput = $("#type").val();
 
 pizzaSelect = new pizza(pizzaInput);
 pizzaSelect.nameSize();
-// alert(pizzaSelect.nameSize());
+ //alert(pizzaSelect.nameSize());
 
 var sizeInput = $("#size").val();
 
 var pizzaSize = new size(sizeInput);
 pizzaSize.priceSize();
-// alert(pizzaSize.priceSize());
+ //alert(pizzaSize.priceSize());
 
 var crustInput = $("#crust").val();
 
 var crustSize = new crust(crustInput);
 crustSize.crustPrice();
-// alert(crustSize.crustPrice());
+//alert(crustSize.crustPrice());
 
 
 var toppingInput = $("#toppings").val();
 
 var toppingSize = new topping(toppingInput);
 toppingSize.toppingPrice();
-// alert(toppingSize.toppingPrice());
+ //alert(toppingSize.toppingPrice());
 
 
 var quantityInput = $("quantity").val();
 
 var  quantitySize = new quantity (quantityInput);
  quantitySize.quantityPrice();
-//  alert(quantitySize.quantityPrice());
+ //alert(quantitySize.quantityPrice());
 
 // calcTotal to calculate the total pizza summation
 
