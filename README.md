@@ -2,7 +2,7 @@
 The project is about website to enable customers be able to purchase pizza.
 
 ## AUTHOR
-NAME : Feli Chegero
+NAME : Felix Chegero
 
 PROFESSION : Student
 
