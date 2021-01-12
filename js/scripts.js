@@ -120,6 +120,7 @@ var  quantitySize = new quantity (quantityInput);
 var pizzaPrice = (parseInt(parseInt(pizzaSize.priceSize()) + parseInt(crustSize.crustPrice()) + parseInt(toppingSize.toppingPrice())));
 $("#summation").append(pizzaPrice);
 
+
 // S-size, C-crust, T-toppings N-name
 
 var pizzaS = (pizzaSize.priceSize());

@@ -3,6 +3,7 @@ header {
     padding: 80px;
     color: aliceblue;
     text-align: center;
+    line-height: 40px;
 }
 @media only screen and (min-width: 600px) {
 body {
@@ -22,4 +23,16 @@ h2:hover {
 }
 h1:hover {
     color: aqua;
+}
+h3 {
+    font-family: 'Yeon Sung', cursive;
+}
+h3:hover {
+    color: aqua;
+}
+p {
+    font-family: monospace;
+}
+header > p{
+    font-size: 24px;
 }
